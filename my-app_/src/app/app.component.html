@@ -1,0 +1,13 @@
+<div class="quiz">
+  <h1>Quiz</h1>
+  <p>Score: {{ score }} / {{ totalQuestions }}</p>
+  <p>Question {{ currentQuestion + 1 }}: {{ question }}</p>
+  <ul>
+    <li *ngFor="let answer of answers; index as i">
+      <input type="radio" name="answer" [(ngModel)]="userAnswer" [value]="i"> {{ answer }}
+    </li>
+  </ul>
+  <button (click)="submitAnswer()">Submit</button>
+</div>
+
+
