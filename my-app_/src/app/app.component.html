@@ -1,3 +1,18 @@
+<div class="px-4 py-5 my-5 text-center">
+  <h1 class="display-5 fw-bold">{{title}}</h1>
+
+  <h2 class="text-[3em] font-bold" *ngIf="!walletConnected">Connect Ethereum Wallet</h2>
+  <h2 class="text-[3em] font-bold" *ngIf="walletConnected">Connected Ethereum Wallet</h2>
+  <button *ngIf="!walletConnected"class="btn btn-success btn-lg px-4 gap-3"(click)="connectToWallet()">Connect Wallet</button>
+    <div *ngIf="walletConnected" class="bg-gradient-to-r from-green-500 
+    to-blue-500 p-[2em] rounded-xl">
+      <label >This is your wallet: {{walletId}}</label>
+      <label >Now, you can start the quiz:</label>
+    </div>
+</div>
+
+
+
 <div class="quiz">
   <h1>Quiz</h1>
   <p>Score: {{ score }} / {{ totalQuestions }}</p>
