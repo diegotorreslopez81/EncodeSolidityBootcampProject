@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/Base64.sol";
 //import "hardhat/console.sol";
 
-contract CityQuiz3 is ERC721URIStorage {
+contract NFTCertificate is ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     constructor() ERC721("NFTCertificate", "NFTCer") {}

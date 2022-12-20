@@ -48,12 +48,11 @@ export class AppComponent {
     }
   }
 
-  async mintNFT() {
-    const signer= await getSigner();
-        const signerContract= new ethers.Contract(NFT_ADDRESS, NFT_ABI, signer);
-
-        const txMint= ()=>signerContract.mint(this.walletId, "1","2");
-        
-        return {signerContract, txMint};
+  mintNFT = async () => {
+    console.log("mintNFT")
+    const signer = await getSigner();
+    const signerContract= new ethers.Contract(NFT_ADDRESS, NFT_ABI, signer);
+    const txMint = ()=>signerContract.mint(this.walletId, "1","2");
+    return {signerContract, txMint};
   } 
 }
