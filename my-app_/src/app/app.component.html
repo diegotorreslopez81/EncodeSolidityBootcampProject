@@ -11,20 +11,11 @@
     </div>
 </div>
 
-
-
-<div class="quiz">
-  <h1>Quiz</h1>
-  <p>Score: {{ score }} / {{ totalQuestions }}</p>
-  <p>Question {{ currentQuestion }}: {{ question }}</p>
-  <ul>
-    <li *ngFor="let answer of answers; index as i">
-      <!-- <input type="radio" name="answer" [(ngModel)]="userAnswer" [value]="i">  -->
-      <input type="radio" name="answer" [value]="i"> 
-      {{ answer }}
-    </li>
-  </ul>
-  <button (click)="submitAnswer()">Submit</button>
+<div *ngIf="walletConnected">
+  <div class="col-lg-3 col-md-4 col-sm-5">
+    <app-quizresult [isResultSubmitted]="isResultSubmitted"></app-quizresult>
 </div>
 
+<app-quizhome (isSubmitted)="checkIsSubmitted($event)"></app-quizhome>
 
+</div>

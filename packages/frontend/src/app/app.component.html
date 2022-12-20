@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">{{title}}</h1>
+  
+    <h2 class="text-[3em] font-bold" *ngIf="!walletConnected">Connect Ethereum Wallet</h2>
+    <button *ngIf="!walletConnected"class="btn btn-success btn-lg px-4 gap-3"(click)="connectToWallet()">Connect Wallet</button>
+      <div *ngIf="walletConnected" class="bg-gradient-to-r from-green-500 
+      to-blue-500 p-[2em] rounded-xl">
+        <label >Your wallet is now connected: {{walletId}}</label>
+        
+        <div class="container">
+            <div class="row">
+                <button class="btn btn-success btn-lg px-4 gap-3"(click)="score=10">Set Score</button>
+                <div class="col-md-12 text-center">
+                    <h4>Start the quiz game! If you get more than 8/12 score, you'll get an NFT 😁</h4>
+                    <p>Click on the card to answer</p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-6" *ngIf="score>8">
+                    <button class="btn btn-success btn-lg px-4 gap-3"(click)="mintNFT()">Get a free NFT!</button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <app-quizresult [isResultSubmitted]="isResultSubmitted"></app-quizresult>
+                </div>
+
+            </div>
+            <app-quizhome (isSubmitted)="checkIsSubmitted($event)"></app-quizhome>
+        </div>
+
+
+      </div>
+  </div>
+

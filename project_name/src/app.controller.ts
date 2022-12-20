@@ -30,7 +30,6 @@ export class QuizController {
   //   return this.appService.claimTokens();
   // }
 
-
   // @Get()
   // getHello(): string {
   //   return this.appService.getHello();
