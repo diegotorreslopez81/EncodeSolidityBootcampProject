@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ethers } from 'ethers';
 import { WalletService } from './services/wallet.service';
+import { decodeImageByBase64, getProvider, getSigner } from './services/utils-eth';
+import { NFT_ABI, NFT_ADDRESS } from './services/Nft';
 
 @Component({
   selector: 'app-root',
@@ -46,7 +48,12 @@ export class AppComponent {
     }
   }
 
-  mintNFT() {
-    
+  async mintNFT() {
+    const signer= await getSigner();
+        const signerContract= new ethers.Contract(NFT_ADDRESS, NFT_ABI, signer);
+
+        const txMint= ()=>signerContract.mint(this.walletId, "1","2");
+        
+        return {signerContract, txMint};
   } 
 }
