@@ -1,123 +1,123 @@
 {
   "questions": [{
-      "question": "What is the BLBLABLAB of a butterfly?",
+      "question": "What does P2P stand for?",
       "answers": [
-        "Apis",
-        "Coleoptera",
-        "Formicidae",
-        "Rhopalocera"
-      ],
-      "correctIndex": 3
-    },
-    {
-      "question": "How hot is the surface of the sun?",
-      "answers": [
-        "1,233 K",
-        "5,778 K",
-        "12,130 K",
-        "101,300 K"
+        "Password to Password",
+        "Peer to Peer",
+        "Product to Product",
+        "Private Key to Public Key"
       ],
       "correctIndex": 1
     },
     {
-      "question": "Who are the actors in The Internship?",
+      "question": "What is a node?",
       "answers": [
-        "Ben Stiller, Jonah Hill",
-        "Courteney Cox, Matt LeBlanc",
-        "Kaley Cuoco, Jim Parsons",
-        "Vince Vaughn, Owen Wilson"
-      ],
-      "correctIndex": 3
-    },
-    {
-      "question": "What is the capital of Spain?",
-      "answers": [
-        "Berlin",
-        "Buenos Aires",
-        "Madrid",
-        "San Juan"
+        "A type of cryptocurrency",
+        "A Blockchain",
+        "A computer on a Blockchain network",
+        "An exchange"
       ],
       "correctIndex": 2
     },
     {
-      "question": "What are the school colors of the University of Texas at Austin?",
+      "question": "Who created Bitcoin?",
       "answers": [
-        "Black, Red",
-        "Blue, Orange",
-        "White, Burnt Orange",
-        "White, Old gold, Gold"
-      ],
-      "correctIndex": 2
-    },
-    {
-      "question": "What is 70 degrees Fahrenheit in Celsius?",
-      "answers": [
-        "18.8889",
-        "20",
-        "21.1111",
-        "158"
-      ],
-      "correctIndex": 2
-    },
-    {
-      "question": "When was Mahatma Gandhi born?",
-      "answers": [
-        "October 2, 1869",
-        "December 15, 1872",
-        "July 18, 1918",
-        "January 15, 1929"
+        "Satoshi Nakamoto",
+        "Samsung",
+        "John Mcafee",
+        "China"
       ],
       "correctIndex": 0
     },
     {
-      "question": "How far is the moon from Earth?",
+      "question": "Where do you store your cryptocurrency?",
       "answers": [
-        "7,918 miles (12,742 km)",
-        "86,881 miles (139,822 km)",
-        "238,400 miles (384,400 km)",
-        "35,980,000 miles (57,910,000 km)"
+        "Bank account",
+        "Floppy Disk",
+        "Wallet",
+        "In your pocket"
       ],
       "correctIndex": 2
     },
     {
-      "question": "What is 65 times 52?",
+      "question": "Where is the LEAST SAFE place to keep your cryptocurrency?",
       "answers": [
-        "117",
-        "3120",
-        "3380",
-        "3520"
+        "In your pocket",
+        "On an exchange like FTX",
+        "On a hot wallet",
+        "At your work desk"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "question": "What is the purpose of a nonce?",
+      "answers": [
+        "Follows nouns",
+        "A hash function",
+        "Prevents double spending",
+        "Sends information to the blockchain network"
       ],
       "correctIndex": 2
     },
     {
-      "question": "How tall is Mount Everest?",
+      "question": "What are the different types of tokens?",
       "answers": [
-        "6,683 ft (2,037 m)",
-        "7,918 ft (2,413 m)",
-        "19,341 ft (5,895 m)",
-        "29,029 ft (8,847 m)"
+        "Platform",
+        "Privacy",
+        "Currency",
+        "All of the above"
       ],
       "correctIndex": 3
     },
     {
-      "question": "When did The Avengers come out?",
+      "question": "Where can you buy cryptocurrency?",
       "answers": [
-        "May 2, 2008",
-        "May 4, 2012",
-        "May 3, 2013",
-        "April 4, 2014"
+        "A private transaction",
+        "An exchange",
+        "A Bitcoin ATM",
+        "All of the above"
       ],
-      "correctIndex": 1
+      "correctIndex": 3
     },
     {
-      "question": "What is 48,879 in hexidecimal?",
+      "question": "Which is NOT a part of asymmetric encryption?",
       "answers": [
-        "0x18C1",
-        "0xBEEF",
-        "0xDEAD",
-        "0x12D591"
+        "Mining",
+        "Public key",
+        "Passphrase",
+        "Private Key"
       ],
-      "correctIndex": 1
+      "correctIndex": 0
+    },
+    {
+      "question": "What is a blockchain?",
+      "answers": [
+        "A distributed ledger on a peer to peer network",
+        "A type of cryptocurrency",
+        "An exchange",
+        "A centralized ledger"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "What is a dApp?",
+      "answers": [
+        "A type of Cryptocurrency",
+        "A condiment",
+        "A type of blockchain",
+        "A decentralized application"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "question": "What is the term for when a blockchain splits?",
+      "answers": [
+        "A merger",
+        "A fork",
+        "A sidechain",
+        "A division"
+      ],
+      "correctIndex": 2
     }
   ]
 }
